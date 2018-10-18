@@ -1,9 +1,7 @@
 import turtle
 
-
-
-
-def flor(npetalas=6,cor="red",tamanho=40,pos=(0.0,0.0)):
+#função para desenhar uma flor. Os parametros por defeito sao 6 petalas, cor vermelha, e tamanho 40 (radio da petala)
+def flor(npetalas=6,cor="red",tamanho=40):
        turtle.seth(0)
        turtle.color(cor,"green")
        turtle.pd()
@@ -68,16 +66,17 @@ def rosinha(cor="pink"):
 
 turtle.seth(90)
 turtle.pu()
+
 turtle.fd(200)
 rosinha("magenta")
+
 turtle.fd(200)
 rosinha("red")
 
 turtle.fd(-400)
 rosinha("purple")
 
-
-    
+#Para salvar o desenho da tela num arquivo .ps   
 tc= turtle.Screen().getcanvas()
 tc.postscript(file="flores.ps")
 
