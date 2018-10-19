@@ -1,3 +1,5 @@
+#primeiro exemplo de funções
+
 def meuverso(palavras):
     print(palavras)
     print(palavras)
