@@ -5,6 +5,3 @@ def linecount(filename):
     return count
 
 print(linecount('lcount.py'))
-
-
-
