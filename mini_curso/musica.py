@@ -59,6 +59,11 @@ class Nota(Sound):
         sleep(secs)
         self.stop()
 
+    def tocafade(self,secs):
+        maxt=10000
+        self.play(-1,maxt)#,int(1000*secs/2))
+        self.fadeout(int(1000*secs))
+
 ##Definir algumas notas
 pre_init(44100, -16, 1, 1024)
 pygame.init()
