@@ -24,6 +24,7 @@ def leaf(t):
     
 def flower(t, n_leaves):
     for i in range(n_leaves):
+        t.color((50*i,10*i,20*i))
         leaf(t)
         t.left(int(360/n_leaves))
 
